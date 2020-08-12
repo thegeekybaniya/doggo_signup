@@ -26,14 +26,12 @@ class Signup extends Component {
 
   async handleSubmit(values, bag) {
     try {
-      console.log(values);
       delete values.confirmPassword;
       const payload = {
         campaignUuid: "46aa3270-d2ee-11ea-a9f0-e9a68ccff42a",
         data: { ...values },
       };
-      // const data = await API.signup(payload);
-      console.log(payload);
+      const data = await API.signup(payload);
       bag.setSubmitting(false);
       this.setState({ isSignupSuccess: true });
     } catch (e) {
