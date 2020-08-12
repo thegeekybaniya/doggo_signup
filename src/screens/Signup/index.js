@@ -54,7 +54,7 @@ class Signup extends Component {
     return (
       <Container fluid style={styles.mainContainer}>
         <Helmet>
-          <title>Signup - Bitcharge</title>
+          <title>Signup - Raisely</title>
         </Helmet>
         <Container style={styles.heroContainer}>
           <Container style={styles.heroLogoContainer}>
