@@ -4,6 +4,8 @@ class API {
   constructor() {
     this.axios = axios.create({
       baseURL: "https://api.raisely.com/v3",
+      responseType: "application/json"
+
     });
   }
 

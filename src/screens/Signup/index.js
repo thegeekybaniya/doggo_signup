@@ -31,12 +31,12 @@ class Signup extends Component {
         campaignUuid: "46aa3270-d2ee-11ea-a9f0-e9a68ccff42a",
         data: { ...values },
       };
-      const data = await API.signup(payload);
+      await API.signup(payload);
       bag.setSubmitting(false);
       this.setState({ isSignupSuccess: true });
     } catch (e) {
+      bag.setErrors({ email: e.response.data.errors[0].message })
       bag.setSubmitting(false);
-      bag.setErrors(API.setErrors(e.response.data.errors.details.errors));
     }
   }
 
