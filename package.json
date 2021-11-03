@@ -19,7 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-select": "^2.0.0",
-    "validator": "^10.3.0",
+    "validator": "^13.7.0",
     "yup": "^0.26.2"
   },
   "scripts": {
